@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "address":"306 Comptowm LA",
+        "country":"Kenya",
+        "description":"3 bedroom flat with two swimming pool",
+        "price":90000,
+        "photo":"001"      
+    },
+    {
+        "id":6,
+        "address":"Chuka, Tharaka nithi",
+        "country":"Kenya",
+        "description":"3 bedroom flat with two swimming pool",
+        "price":79000,
+        "photo":"006"      
+    },
+    {
+        "id":2,
+        "address":"500 Lagos Nigeria",
+        "country":"Nigeria",
+        "description":"2 bedroom apartment with a view of the ocean",
+        "price":50000,
+        "photo":"002"
+    },
+    {
+        "id":7,
+        "address":"501 street Abuja Nigeria",
+        "country":"Nigeria",
+        "description":"4 bedroom apartment with a view of the ocean",
+        "price":86000,
+        "photo":"007"
+    },
+    {
+        "id":3,
+        "address":"766 calihills California",
+        "country":"Usa",
+        "description":"A luxury house only accessible to those who can afford it",
+        "price":40000,
+        "photo":"003"
+    },
+    {
+        "id":4,
+        "address":"231 Muranga Kikuyu",
+        "country":"Mali",
+        "description":"High quality state of the art family home",
+        "price":36000,
+        "photo":"004"
+    }
+]

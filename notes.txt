@@ -1,0 +1,34 @@
+Common components and hook practises
+	- Always called at the top level: not loops or conditional statements
+	- UseEffect hook can return a function that runs onComponentUnMount: use the return statement with an anonymous function containing the functionality
+Callback and ref hooks
+	- Functions can also be passed down to child components as props
+	- JSX can also be stored in variables and passed aroud
+	- A funtion passed in a useEffect hook is a dependency and needs to be passed in the dependency array
+	- useCallback hook to fix the rendering issue that occurs with functions being passed in the useEffect array. Wrap the funtion inside the useCallback hook and pass and empty dependency array
+	- useRef preserves the value of a variable during a components lifetime
+Custom hooks
+	- Custom hooks implement the separation of concerns principle to make code more clean, reusable and testable. 
+	- They are functions mainly starting with "use" in their naming and return a value
+Context
+	- Used to store values needed by multiple components
+	- Create new file "__context" and import "createContext" from react
+	- Create a new context ie `const HouseContext = createContext([])`
+	- Import this to the parent component and wrap the children in `HouseContext.Provider` component with value attribute set to the value you want to pass
+	- To use the value in child component: import "useContext" from react and the context created. Then create a variable whose value is in the form "useContext(HouseContext)"
+Type checking
+	- Install propTypes using npm
+	- All checks run while in development mode
+	- In production mode use TypeScript
+Ejecting- taking control of the build process
+	- Releases us from the constraints of create-react-app
+	- Ejecting is irreversible.
+	- It allow for editing of babel files and definition of custom build pipeline.
+	- `npm run eject` is the command used to allow for this
+	- You are on your own on package updates
+Unit testing- Jest library
+	- `npm test`: Runs in watch mode hence auto updates when changes made
+PWA(Progressive Web Applications)
+	- Faster and reliable because they do not rely on constant internet connection
+	- Response is cached by a service worker: hence on each time the app starts the files are fetched from the cache. if connection is available it checks for update
+	- Fallback when their is no internet connection
